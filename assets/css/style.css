@@ -1,22 +1,55 @@
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: abcdiatype, 'helvetica neue', Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
 body{
     background: #eee;
+    height: 100vh;
 }
+
+.opening{
+    height: 500px;
+    width: auto;
+    background: gray;
+    background-image: url(/assets/img/graphics/virtualnetwork.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    font-size: 48px;
+    color: white;
+}
+
+h2{
+    font-size: 35px;
+    color: white; 
+}
+
+h3{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.make{ /*I want this to area to be in the bottom right hand corner*/
+    justify-content: flex-end
+}
+
+
 
 .wrapper{
     width: 100%;
-    max-width: 1200px;
+    max-width: 2000px; /*can I just say vp? like max-width: vp ? How do I fit to content?*/
     margin: 0 auto;
+    background-color: rgb(76, 128, 197);
 }
 
 /*menu styles*/
 
 nav{
-    background: rgba(141, 96, 38, 0.774);
+    background: rgb(76, 128, 197);
+    width: 100%;
 }
 
 nav ul{
@@ -27,15 +60,92 @@ nav ul{
 nav a{
     text-decoration: none;
     text-align: center;
-    color: rgb(14, 56, 14);
+    color: rgb(14, 41, 56);
     display: block;
-    padding: 5px;
+    padding: 8px;
+
 }
 
 nav:hover{
-    background-color: rgba(110, 75, 30, 0.774);
+    background-color: rgba(30, 65, 110, 0.774);
 }
 
+nav a:hover{
+    background-color: rgb(105, 153, 216);
+    padding: 7px;
+}
+
+/*social menu styles*/
+
+a.github{
+    background: url(/assets/img/social/github.png) no-repeat center;
+    background-size: 155%;
+}
+
+a.facebook{
+    background: url(/assets/img/social/fb.png) no-repeat center;
+    background-size: 120%;
+}
+
+a.twitter{
+    background: url(/assets/img/social/tw.png) no-repeat center;
+    background-size: 100%;
+}
+
+a.linkedin{
+    background: url(/assets/img/social/linkedin.png) no-repeat center;
+    background-size: 120%;
+}
+
+.social a{
+    text-indent: -10000px;
+}
+
+.social{
+    max-width: 140px;
+    margin: 0 auto; /*when we have a smaller viewport, the logos look large, so we will center and fix the margin*/
+}
+
+/*flex styles: remember every direct descendant after the flex-container will be a flex item L to R*/
+
+nav ul.social{ /*because the social links have shrunk, we are going to use a flex grow to help*/
+    flex: 1 1 0; /*<-With this alone, the logos are too big, so use a max-width property not in the ul tag*/
+    display: flex; /*We want to sit the logos L to R instead of top and bottom. Use Display: Flex. But now these are too small, so since the li items become flex items we can target them in separate code using flex on them.*/
+}
+
+nav ul.social li{
+    flex: 1 1 0; /*The problem with this now is when you increase the window size, the logos sit on the left and indent inside the page because in the .social we had an auto magrin. Fix this by targeting social in the @media section.*/
+    padding: 0px 2px;
+}
+
+.flex-container{
+    display: flex;
+    //flex-direction: column;
+    background: white;
+    flex-wrap: wrap;
+}
+
+.box{
+    height: 200px; /*unsure if I should set a px limit for this*/
+    flex: 1 0 460px;
+}
+
+.one{
+    background: rgb(87, 87, 87);
+    width: auto;
+}
+
+.two{
+    background: rgb(66, 66, 66);
+}
+
+.three{
+    background: rgb(53, 53, 53);
+}
+
+.four{
+    background: rgb(87, 87, 87);
+}
 
 @media screen and (min-width: 768px) {
     nav ul{
@@ -44,10 +154,15 @@ nav:hover{
     }
 
     nav li{
-        flex: 0 0 1;
-        justify-content: space-between;
+        flex: 1 1 0;
     }
 
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
 
+        .social{
+            margin: 0;
 
 }
