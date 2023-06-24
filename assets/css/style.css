@@ -15,11 +15,16 @@ body{
     background-image: url(/assets/img/graphics/virtualnetwork.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
+    padding-left: 30px;
+    
 }
 
 h1{
     font-size: 48px;
-    color: white;
+    color: white
+    
+    ;
 }
 
 h2{
@@ -32,8 +37,11 @@ h3{
     text-transform: uppercase;
 }
 
-.make{ /*I want this to area to be in the bottom right hand corner*/
-    justify-content: flex-end
+.make{ /*I want this to area to be in the bottom right hand corner; absolute? relative to the next container*/
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
 }
 
 
@@ -120,7 +128,7 @@ nav ul.social li{
 
 .flex-container{
     display: flex;
-    //flex-direction: column;
+    flex-direction: column;
     background: white;
     flex-wrap: wrap;
 }
@@ -164,5 +172,6 @@ nav ul.social li{
 
         .social{
             margin: 0;
+        }
 
 }
