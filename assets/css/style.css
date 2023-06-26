@@ -15,7 +15,7 @@ body{
 }
 .wrapper{
     width: 100%;
-    max-width: 2000px; /*can I just say vp? like max-width: vp ? How do I fit to content?*/
+
     margin: 0 auto;
     background-color: rgb(76, 128, 197);
     overflow: visible;
