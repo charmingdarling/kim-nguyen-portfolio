@@ -7,7 +7,7 @@ Goals of this project are to use:
 
 Practicing with these will allow us to be more successful applying the foundations of what we have learned the last few weeks.
 
-Link: 
+Link: https://charmingdarling.github.io/kim-nguyen-portfolio/
 
 
 ![Phone Screenshot View](phonescreenshot.png)
