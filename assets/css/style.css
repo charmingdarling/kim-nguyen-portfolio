@@ -4,8 +4,20 @@
 }
 
 body{
-    background: #eee;
+    background: gray;
     height: 100vh;
+}
+
+.body{
+}
+.wrapper{
+    width: 100%;
+    max-width: 2000px; /*can I just say vp? like max-width: vp ? How do I fit to content?*/
+    margin: 0 auto;
+    background-color: rgb(76, 128, 197);
+    overflow: visible;
+    position: fixed;
+    top: 0; 
 }
 
 .opening{
@@ -16,18 +28,20 @@ body{
     background-size: cover;
     background-position: center;
     position: relative;
-    padding-left: 30px;
-    
+    padding-left: 0px;    
 }
 
-h1{
+#opening{
+    text-align: center;
+}
+
+.opening h1{
     font-size: 48px;
-    color: white
-    
-    ;
+    color: white;
+    text-align: center;
 }
 
-h2{
+.opening h2{
     font-size: 35px;
     color: white; 
 }
@@ -48,14 +62,11 @@ h3{
     /*I want to make the background blurred so this text stands out*/
 }
 
-
-
-.wrapper{
-    width: 100%;
-    max-width: 2000px; /*can I just say vp? like max-width: vp ? How do I fit to content?*/
-    margin: 0 auto;
-    background-color: rgb(76, 128, 197);
+.kim{
+    height: 400px;
 }
+
+
 
 /*menu styles*/
 
@@ -75,11 +86,11 @@ nav a{
     color: rgb(14, 41, 56);
     display: block;
     padding: 8px;
-
 }
 
+
 nav:hover{
-    background-color: rgba(30, 65, 110, 0.774);
+    background-color: rgba(37, 83, 143, 0.774);
 }
 
 nav a:hover{
@@ -109,9 +120,9 @@ a.linkedin{
     background-size: 120%;
 }
 
-a.contact{
-    background: url(/assets/img/social/phone.png) no-repeat center;
-    background-size: 90%;
+a.email{
+    background: url(/assets/img/social/email.png) no-repeat center;
+    background-size: 100%;
 }
 
 .social a{
@@ -121,6 +132,13 @@ a.contact{
 .social{
     max-width: 140px;
     margin: 0 auto; /*when we have a smaller viewport, the logos look large, so we will center and fix the margin*/
+    
+}
+
+/*links within page*/
+
+a.home{
+
 }
 
 /*flex styles: remember every direct descendant after the flex-container will be a flex item L to R*/
@@ -141,6 +159,8 @@ nav ul.social li{
     background: white;
     flex-wrap: wrap;
     padding: 0px 0px;
+    
+
 }
 
 .flex-container h2{
@@ -149,13 +169,15 @@ nav ul.social li{
 }
 
 .box{
-    height: 200px; /*unsure if I should set a px limit for this*/
+    height: auto; /*unsure if I should set a px limit for this*/
     flex: 1 0 460px;
+    
 }
 
 .one{
     background: rgb(87, 87, 87);
     width: auto;
+
 }
 
 .two{
