@@ -7,27 +7,29 @@
         </title>
         <meta name="Portfolio" content="html, css, developer">
         <link rel="stylesheet" href="./assets/css/style.css">
+        
     </head>
 
     <body>
+        <section class="wrapper">
+            <nav> <!--Use UL for better Semantics when having links and navigation-->
+                <ul>
+                    <li><a href="#opening">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+                <ul class="social">
+                    <li><a href="https://github.com/charmingdarling" class="github" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.facebook.com/hasinai.kim/" class="facebook" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/kimicalwarrior" class="twitter" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/kimberly-nguyen-9ba044102/" class="linkedin" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:h1hasinai_f06@yahoo.com" class="email">Email</a></li>
+                </ul>
+            </nav>
+        </section>
         <section class="body">
-            <section class="wrapper">
-                <nav> <!--Use UL for better Semantics when having links and navigation-->
-                    <ul>
-                        <li><a href="#opening">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                    </ul>
-                    <ul class="social">
-                        <li><a href="https://github.com/charmingdarling" class="github" target="_blank">GitHub</a></li>
-                        <li><a href="https://www.facebook.com/hasinai.kim/" class="facebook" target="_blank">Facebook</a></li>
-                        <li><a href="https://twitter.com/kimicalwarrior" class="twitter" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/in/kimberly-nguyen-9ba044102/" class="linkedin" target="_blank">LinkedIn</a></li>
-                        <li><a href="mailto:h1hasinai_f06@yahoo.com" class="email">Email</a></li>
-                    </ul>
-                </nav>
-            </section>
+            
 
             <section class="opening" id="opening">                
                 <h1>Hello, I'm Kim Nguyen.</h1>
@@ -50,27 +52,30 @@
                         Education
                     </h2>
                     <p>
-                        <strong>Degree of Science: Nursing - Dec 2010</strong>
+                        Degree of Science: Nursing - Dec 2010
                         <br>
                         Stephen F. Austin State University
                     <p>
-                        <strong>Berkeley Bootcamp - Nov 2023</strong>
+                        Berkeley Bootcamp - Nov 2023
                     </p>
                 </div>
+
                 <div class="box three" id="portfolio">
                     <h2>
                         Portfolio
                     </h2>
                     <p>
+                        <ul class="portfoliolinks">
+                            <li><a href="#"><img src="./assets/img/graphics/portfolioimages/meeting.jpg" class="horiseonphoto"></a>
+                                <strong>Horiseon</strong>
+                                <br>First project in where we learned HTML and CSS elements.</li>
+                            <li></li>
+                        </ul>
+
                         <img src="./assets/img/graphics/portfolioimages/html.png" class="portfolioimg">
                         <img src="./assets/img/graphics/portfolioimages/css.png" class="portfolioimg">
                         <img src="./assets/img/graphics/portfolioimages/js.png" class="portfolioimg">
                     </p>
-                </div>
-                <div class="box four">
-                    <h2>
-                        ???
-                    </h2>
                 </div>
             </section>
     </section>

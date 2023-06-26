@@ -18,6 +18,7 @@ body{
     overflow: visible;
     position: fixed;
     top: 0; 
+    z-index: 1;
 }
 
 .opening{
@@ -64,9 +65,8 @@ h3{
 
 .kim{
     height: 400px;
+    //transform: translatex(50%) translateY(50%) z-index: index;
 }
-
-
 
 /*menu styles*/
 
@@ -159,8 +159,7 @@ nav ul.social li{
     background: white;
     flex-wrap: wrap;
     padding: 0px 0px;
-    
-
+    margin: 10px;
 }
 
 .flex-container h2{
@@ -170,14 +169,12 @@ nav ul.social li{
 
 .box{
     height: auto; /*unsure if I should set a px limit for this*/
-    flex: 1 0 460px;
-    
+    flex: 1 0 auto;
+    width: auto;
 }
 
 .one{
     background: rgb(87, 87, 87);
-    width: auto;
-
 }
 
 .two{
@@ -186,17 +183,35 @@ nav ul.social li{
 
 .three{
     background: rgb(53, 53, 53);
+    justify-content: space-between;
 }
+    .three ul {
+        padding-top: 10px;
+
+    }
+
+    .three ul li {
+        list-style-type: none;
+    }
 
     .portfolioimg{
+        justify-content: center;
         height: 200px;
     }
 
-.four{
-    background: rgb(87, 87, 87);
-}
+    .horiseonphoto{
+        width: 300px;
+        height: 200px;
+    }
+    .horiseonphoto img:hover{
+        transform:scale(1.1);
+    }
 
-@media screen and (min-width: 768px) {
+    a img:hover{
+        transform: scale(1.1);
+    }
+
+@media screen and (min-width: 960px) {
     nav ul{
         display: flex;
         justify-content: flex-start;
