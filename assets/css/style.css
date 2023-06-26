@@ -28,7 +28,7 @@ body{
     height: 300px;
     width: auto;
     background: gray;
-    background-image: url("/assets/img/graphics/virtualnetwork.jpg");
+    background-image: url("../img/graphics/virtualnetwork.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -89,27 +89,27 @@ nav a:hover{
 /*social menu styles*/
 
 a.github{
-    background: url("/assets/img/social/github.png") no-repeat center;
+    background: url("../img/social/github.png") no-repeat center;
     background-size: 155%;
 }
 
 a.facebook{
-    background: url("/assets/img/social/fb.png") no-repeat center;
+    background: url("../img/social/fb.png") no-repeat center;
     background-size: 120%;
 }
 
 a.twitter{
-    background: url("/assets/img/social/tw.png") no-repeat center;
+    background: url("../img/social/tw.png") no-repeat center;
     background-size: 100%;
 }
 
 a.linkedin{
-    background: url("/assets/img/social/linkedin.png") no-repeat center;
+    background: url("../img/social/linkedin.png") no-repeat center;
     background-size: 120%;
 }
 
 a.email{
-    background: url("/assets/img/social/email.png") no-repeat center;
+    background: url("../img/social/email.png") no-repeat center;
     background-size: 100%;
 }
 
