@@ -188,6 +188,10 @@ nav ul.social li{
     background: rgb(53, 53, 53);
 }
 
+    .portfolioimg{
+        height: 200px;
+    }
+
 .four{
     background: rgb(87, 87, 87);
 }
